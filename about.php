@@ -1,0 +1,406 @@
+<?php
+session_start();
+?>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>About</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Event<span class="text-dark">Fusion</span> </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.php" class="nav-item nav-link active">Home</a>
+                            <a href="about.php" class="nav-item nav-link">About</a>
+                            <a href="service.php" class="nav-item nav-link">Services</a>
+                            <a href="event.php" class="nav-item nav-link">Events</a>
+                            <a href="index.html" class="nav-item nav-link ">Connect</a>
+                            <a href="book.html" class="nav-item nav-link">Booking</a>
+                            <!--
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu bg-light">
+                                    <a href="book.html" class="dropdown-item">Booking</a>
+                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                </div>
+                            </div>
+                            -->
+                            <a href="contact.php" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <!--<button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>-->
+                        <a href="home.php" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill"> 
+                        <?php
+                            echo "Welcome ".$_SESSION['un'];
+                            $_SESSION['un'];
+                            $_SESSION['em'];
+                            $_SESSION['mob'];
+                            $_SESSION['ad'];
+                        ?>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <!--
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">About Us</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">About</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- About Satrt -->
+        <div class="container-fluid py-6">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/v1695136906/connect_moggwh.jpg" class="img-fluid rounded" alt="">
+                    </div>
+                    <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
+                        <h1 class="display-5 mb-4">It’s time to Unite and Enjoy</h1>
+                        <p class="mb-4">Let's Connect with each other and Explore the events all around Visakhapatnam.</p>
+                        <div class="row g-4 text-dark mb-5">
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Unite Together
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Explore the World
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Organize your Events
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fas fa-share text-primary me-2"></i>Connect with People
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Fact Start-->
+        <div class="container-fluid faqt py-6">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                       <div class="row g-4">
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-star fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">365</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Days</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-envelope fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">24</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">hours Service</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
+                                <div class="faqt-item bg-primary rounded p-4 text-center">
+                                    <i class="fas fa-check fa-4x mb-4 text-white"></i>
+                                    <h1 class="display-4 fw-bold" data-toggle="counter-up">7</h1>
+                                    <p class="text-dark text-uppercase fw-bold mb-0">Events Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/v1695146124/pexels-sebastian-ervi-1763075_xfjlfc.jpg" class="img-fluid rounded animated zoomIn" alt="">
+                                <span></span>
+                        </img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video -->
+        <!--
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    -->
+                        <!-- 16:9 aspect ratio -->
+                        <!--
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+        <!-- Fact End -->
+
+
+        <!-- Team Start -->
+        <!--
+        <div class="container-fluid team py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Team</small>
+                    <h1 class="display-5 mb-5">We have experienced chef Team</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="img/team-1.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Henry</h4>
+                                <p class="text-white mb-0">Decoration Chef</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="img/team-2.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Jemes Born</h4>
+                                <p class="text-white mb-0">Executive Chef</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="img/team-3.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Martin Hill</h4>
+                                <p class="text-white mb-0">Kitchen Porter</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded">
+                            <img class="img-fluid rounded-top " src="img/team-4.jpg" alt="">
+                            <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                                <h4 class="text-primary">Adam Smith</h4>
+                                <p class="text-white mb-0">Head Chef</p>
+                            </div>
+                            <div class="team-icon d-flex flex-column justify-content-center m-4">
+                                <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!-- Team End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h1 class="text-primary">Event<span class="text-dark">Fusion</span></h1>
+                            <p class="lh-lg mb-4">The event regularly attracts a diverse range of attendees from around the world, across different professions, and with different.</p>
+                            <!-- <div class="footer-icon d-flex">
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Special Facilities</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Unite</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Explore</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Connect</a>
+                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Organize</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Us</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Visakhapatnam, Andhra Pradesh
+                                    India</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> +91 9X7X5X2X3X1</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> support@eventfusion.com</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> Mon to Fri 9am to 6pm</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> Sat to Sun 9am to 10pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Social Gallery</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1696412129/eventcreation_amzod5.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1695136804/connect1_gxlm96.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1695146124/pexels-sebastian-ervi-1763075_xfjlfc.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1695136655/fest_tehkjh.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1694937275/pexels-thibault-trillet-167636_ddfc6v.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="https://res.cloudinary.com/dfnrww5gx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1694937460/pexels-mikky-k-625644_ft788d.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
